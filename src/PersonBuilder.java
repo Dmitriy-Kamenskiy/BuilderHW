@@ -12,6 +12,7 @@ public class PersonBuilder {
         }
         return this;
     }
+
     public PersonBuilder setSurname(String surname) throws IllegalStateException {
         if (surname == null || surname.isEmpty()) {
             throw new IllegalArgumentException("Должно быть не пустое поле!!!");
@@ -20,12 +21,14 @@ public class PersonBuilder {
         }
         return this;
     }
+
     public PersonBuilder setAge(int age) throws IllegalArgumentException {
         if (age < 0) {
             throw new IllegalArgumentException("Должна быть положительное значение!!!");
         }
         return this;
     }
+
     public PersonBuilder setAddress(String address) {
         this.address = address;
         return this;

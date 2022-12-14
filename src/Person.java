@@ -37,20 +37,24 @@ public class Person {
     public String getName() {
         return name;
     }
+
     public String getSurname() {
         return surname;
     }
+
     public int getAge() {
         return age;
     }
-    public String getAddress(){
+
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address){
+    public void setAddress(String address) {
         this.address = address;
     }
-    public void happyBirthday(){
+
+    public void happyBirthday() {
         if (hasAge()) {
             age++;
         }
